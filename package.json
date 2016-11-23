@@ -1,0 +1,19 @@
+{
+  "name": "demo-plugin",
+  "version": "1.0.0",
+  "description": "Plugins are extentions to currenly built 'core' (with general modules, that can not be removed) application. They expand the functionality of the application, add necessary features and are used to expand the application for users to fit their needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimivanov/demo-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadimivanov/demo-plugin/issues"
+  },
+  "homepage": "https://github.com/vadimivanov/demo-plugin#readme"
+}
