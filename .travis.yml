@@ -1,0 +1,30 @@
+sudo: required
+dist: trusty
+
+language: node_js
+node_js:
+  - "6"
+
+install:
+  - npm install
+
+before_script:
+  - npm install -g gulp
+
+script: gulp default
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
+
+branches:
+  only:
+    - master
+
+#deploy:
+#  provider: s3
+#  access_key_id: "AKIAJZ7MRNYC3A6BMA3A"
+#  secret_access_key: "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"
+#  bucket: "S3 Bucket"
+#  skip_cleanup: true
