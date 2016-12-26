@@ -69,3 +69,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['template', 'compress-views', 'css', 'compress-libs', 'watch']);
+gulp.task('build', ['template', 'compress-views', 'css', 'compress-libs']);
