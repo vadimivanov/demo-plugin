@@ -28,3 +28,10 @@ branches:
 #  secret_access_key: "0z8S/Bxn/6DOad7BWSRmU0qdv+2Wc6FO7LAWsI74"
 #  bucket: "S3 Bucket"
 #  skip_cleanup: true
+
+env:
+  global:
+    - "FTP_USER=chibi"
+    - "FTP_PASSWORD=changeme"
+after_success:
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://193.107.128.193/home/chibi/www"
