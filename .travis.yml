@@ -34,4 +34,4 @@ env:
     - "FTP_USER=chibi"
     - "FTP_PASSWORD=changeme"
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://193.107.128.193/home/chibi/www"
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD sftp://193.107.128.193/home/chibi/www"
