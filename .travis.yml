@@ -24,4 +24,7 @@ branches:
 
 env:
   global:
-    - secure: "PYCukEI1h6CeQLrnu7ecN22a8OLn8KlN1Zd4e8c2h7aDEBA40nEAiuEe8DpKZuRiXEbsgzD1UykGzplLaV0oPJMJiY2vFrg1OBtCFCBVAWmJthrZsB/Ex1jJi6SFGBBFeZ5/6lD/z5piuQ1hjNwmU0PMne6VWSXMWuuLX/m4gDHHIa6Fzl00sV7y6K3K/Z/b3/kqMGzNWp9pqDTO62Xdrvtn+Pmp3MgJzRvHKqpT/9yXmoIxy0nRt/TgtdqpHQt9+MhRgZOuUpIB7Kagcdop8Oi9b0sxsrcrfBGiq+W3sKoITLlYZC1FF4642ntxRczghttcOloMUMwKKtQF69uVYh+OE+himRWqfVmRmo+/X0ExdUaWWJi0/a5YDoMU8/TVV1E0VN1pCD1YvhKaNM7TKV/azZ/FSCZs3Nl0XHU9BVu0tk6KlImFKqdNpohsylZJymOLCnNuw+zPY4mYsFXgWDOxU9yHPqjlb+F+ulwXC6CsydTBgoXekEbPNmA6BZG8pDBKvWSXGGr4mdOHgg+H6LQMXRZrZVA0QNqW++ver28DZgwVW0EwoqTPI2TOqDGQGMoG7zlJ9vWj7sLsy75LrLvDQZH+Z4OUU2tT7dEphAF4Js/Ht95hUXHU8c/mkOClmRkWqDMLU1N8CUl7JZZTPIma3dQ4cK9z2NUVu5yOwEY="
+    - "FTP_USER=chibi"
+    - "FTP_PASSWORD=changeme"
+after_success:
+    "curl uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://193.107.128.193/home/chibi/www"
