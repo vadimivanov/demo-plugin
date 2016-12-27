@@ -35,9 +35,4 @@ addons:
             - sshpass
 
 after_success:
-    - mkdir build
-    - mv * build
-    - tar -czf package.tgz build
-    - export SSHPASS=$DEPLOY_PASS
-    - sshpass -e scp package.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
-    - sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
+    "curl --ftp-create-dirs -T uploadfilename -u $DEPLOY_USER:$DEPLOY_PASS ftp://$DEPLOY_HOST/home/chibi/www"
