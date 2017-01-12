@@ -1,6 +1,6 @@
 {
-  "name": "rss-parser",
-  "version": "1.0.0",
+  "name": "vivanov-sliceart",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vadimivanov/rss-parser.git"
+    "url": "git+https://github.com/vadimivanov/demo-plugin.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vadimivanov/rss-parser/issues"
+    "url": "https://github.com/vadimivanov/demo-plugin/issues"
   },
-  "homepage": "https://github.com/vadimivanov/rss-parser#readme",
+  "homepage": "https://github.com/vadimivanov/demo-plugin#readme",
   "dependencies": {
     "gulp-lodash": "^0.1.1"
   },
@@ -33,6 +33,14 @@
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.3.0",
-    "gulp-useref": "^1.3.0"
+    "gulp-useref": "^1.3.0",
+    "commitizen": "^2.9.5",
+    "cz-conventional-changelog": "^1.2.0",
+    "karma-chai": "^0.1.0",
+    "karma-htmlfile-reporter": "^0.3.4",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.0.0",
+    "semantic-release": "^6.3.2"
   }
 }
