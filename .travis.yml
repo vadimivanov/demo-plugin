@@ -32,5 +32,6 @@ branches:
 #        packages:
 #            - sshpass
 
-#after_success:
+after_success:
 #    "curl --ftp-create-dirs -T uploadfilename -u $DEPLOY_USER:$DEPLOY_PASS ftp://$DEPLOY_HOST/home/chibi/www"
+    - npm run semantic-release
