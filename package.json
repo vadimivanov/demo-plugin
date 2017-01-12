@@ -1,14 +1,16 @@
 {
   "name": "vivanov-sliceart",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vadimivanov/demo-plugin.git"
+    "url": "https://github.com/vadimivanov/demo-plugin.git"
   },
   "author": "",
   "license": "ISC",
@@ -42,5 +44,10 @@
     "mocha": "^3.2.0",
     "nyc": "^10.0.0",
     "semantic-release": "^6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
